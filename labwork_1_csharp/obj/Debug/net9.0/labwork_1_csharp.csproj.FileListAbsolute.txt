@@ -1,0 +1,14 @@
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.AssemblyInfoInputs.cache
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.AssemblyInfo.cs
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.csproj.CoreCompileInputs.cache
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/bin/Debug/net9.0/labwork_1_csharp
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/bin/Debug/net9.0/labwork_1_csharp.deps.json
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/bin/Debug/net9.0/labwork_1_csharp.runtimeconfig.json
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/bin/Debug/net9.0/labwork_1_csharp.dll
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/bin/Debug/net9.0/labwork_1_csharp.pdb
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.dll
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/refint/labwork_1_csharp.dll
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.pdb
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.genruntimeconfig.cache
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/ref/labwork_1_csharp.dll
