@@ -38,7 +38,7 @@ namespace labwork_1_csharp.Services
                 DisplayStatus();
                 Display();
                 
-                Console.WriteLine("\nВведите команду: ");
+                Console.Write("\nВведите команду: ");
                 var input = Console.ReadLine();
 
                 var command = ParseCommand(input) ;
@@ -53,21 +53,29 @@ namespace labwork_1_csharp.Services
                 {
                     var result = _commandProcessor.ExecuteCommand(command.Value);
                     Console.WriteLine(result.Message);
-
-                    Console.WriteLine(result.Success ? $"{result.Message} выполнена" : $"{result.Message} не выполнена");
+                    Console.ReadLine();
                 }
                 else
                 {
                     Console.WriteLine("Неверный ввод команды");
+                    Console.ReadLine();
                 }
+                Console.Clear();
             }
         }
 
         private void DisplayStatus()
         {
-            Console.WriteLine($"\nТекущий режим: {_modeManager.GetModeDisplay(_modeManager.CurrentMode)}");
-            Console.WriteLine($"Баланс: {_coin.Balance:C}");
-            Console.WriteLine($"Доход: {_coin.Income:C}");
+            if (_modeManager.CurrentMode == WorkMode.AdminMode)
+            {
+                Console.WriteLine($"\nТекущий режим: {_modeManager.GetModeDisplay(_modeManager.CurrentMode)}");
+                Console.WriteLine($"Доход: {_coin.Income:C}");
+            }
+            else
+            {
+                Console.WriteLine($"Баланс: {_coin.Balance:C}");
+            }
+            
         }
         public void Display()
         {
@@ -76,6 +84,8 @@ namespace labwork_1_csharp.Services
                 .Cast<WorkMode>()
                 .Where(c => c != WorkMode.Exit)
                 .OrderBy(c => (int)c);
+            
+            Console.WriteLine("-1 - Выход из программы");
 
             foreach (var command in allCommands)
             {
@@ -84,7 +94,7 @@ namespace labwork_1_csharp.Services
                     Console.WriteLine($"{(int)command} - {GetCommandDisplay(command)}");
                 }
             }
-            Console.WriteLine("-1 - Выход из программы");
+            
         }
 
         public WorkMode? ParseCommand(string input)
@@ -111,12 +121,12 @@ namespace labwork_1_csharp.Services
             {
                 WorkMode.CustomMode => "Пользовательский режим",
                 WorkMode.CViewProduct => "Просмотр товаров",
-                WorkMode.CInsertCoin => "Внести монету",
+                WorkMode.CInsertCoin => "Внести деньги",
                 WorkMode.CSelectionProduct => "Выбрать товар",
-                WorkMode.CReturnCoin => "Вернуть монеты",
+                WorkMode.CReturnCoin => "Вернуть деньги",
                 WorkMode.AdminMode => "Режим администратора",
                 WorkMode.AAddProduct => "Добавить товар",
-                WorkMode.ATakeCoin => "Забрать монеты",
+                WorkMode.ATakeCoin => "Забрать деньги",
                 WorkMode.Exit => "Выход",
                 _ => command.ToString()
             };
@@ -124,8 +134,9 @@ namespace labwork_1_csharp.Services
 
         public CommandResult DisplayProducts()
         {
-            Console.WriteLine("\n------------------------");
+            Console.WriteLine("\n----------------");
             Console.WriteLine("Каталог товаров");
+            Console.WriteLine("----------------\n");
 
             if (!_products.Any(p => p.Quantity > 0))
             {
@@ -136,6 +147,7 @@ namespace labwork_1_csharp.Services
             foreach (var product in _products.Where(p => p.Quantity > 0))
             {
                 Console.WriteLine(product);
+                Console.WriteLine();
             }
             return new CommandResult{Success = true};
         }
@@ -157,10 +169,13 @@ namespace labwork_1_csharp.Services
             if (!availableProducts.Any())
                 return new CommandResult { Success = false, Message = "Товары отсутствуют" };
             
-            Console.WriteLine("\nТовары:");
+            Console.WriteLine("\n----------------");
+            Console.WriteLine("Каталог товаров");
+            Console.WriteLine("----------------\n");
             foreach (var product in availableProducts)
             {
                 Console.WriteLine(product);
+                Console.WriteLine();
             }
             
             Console.Write("\nВведите ID товара: ");
@@ -182,7 +197,7 @@ namespace labwork_1_csharp.Services
                 if (result.Success)
                 {
                     product.Quantity--;
-                    return new CommandResult{Success = true, Message = $"Выдан товар: {product.Name}.{result.Message}"};
+                    return new CommandResult{Success = true, Message = $"Выдан товар: {product.Name}. \n{result.Message}"};
                 }
                 return result;
             }
@@ -206,7 +221,7 @@ namespace labwork_1_csharp.Services
 
         public CommandResult AddProduct()
         {
-            Console.WriteLine("Введите название товара: ");
+            Console.Write("Введите название товара: ");
             var name = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(name))
             {

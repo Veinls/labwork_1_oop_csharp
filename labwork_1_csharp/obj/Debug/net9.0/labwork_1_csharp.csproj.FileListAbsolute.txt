@@ -12,3 +12,4 @@
 /Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.pdb
 /Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.genruntimeconfig.cache
 /Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/ref/labwork_1_csharp.dll
+/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.sourcelink.json

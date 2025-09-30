@@ -18,7 +18,7 @@ namespace labwork_1_csharp.Models
                return new CommandResult{Success = false, Message = "Недостаточно средств"};
             Balance -= price;
             Income += price;
-            return new CommandResult{Success = true, Message = $"Покупка совершена. Сдача: {Balance:C}"};
+            return new CommandResult{Success = true, Message = $"Сдача: {Balance:C}"};
         }
 
         public decimal ReturnCoin()
