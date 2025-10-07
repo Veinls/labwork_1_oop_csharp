@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/labwork_1_csharp.csproj",
+      "projectUniqueName": "/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/labwork_1_csharp.csproj",
       "projectName": "labwork_1_csharp",
-      "projectPath": "/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/labwork_1_csharp.csproj",
+      "projectPath": "/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/labwork_1_csharp.csproj",
       "packagesPath": "/Users/lisau/.nuget/packages/",
-      "outputPath": "/Users/lisau/C#/labwork_1_csharp/labwork_1_csharp/obj/",
+      "outputPath": "/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lisau/.nuget/NuGet/NuGet.Config"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
