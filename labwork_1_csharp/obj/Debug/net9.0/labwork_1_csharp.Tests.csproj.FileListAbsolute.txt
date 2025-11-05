@@ -1,6 +1,0 @@
-/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.Tests.csproj.AssemblyReference.cache
-/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.Tests.AssemblyInfoInputs.cache
-/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.Tests.AssemblyInfo.cs
-/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.Tests.csproj.CoreCompileInputs.cache
-/Users/lisau/Desktop/labwork_1_oop_csharp/labwork_1_csharp/obj/Debug/net9.0/labwork_1_csharp.Tests.sourcelink.json
