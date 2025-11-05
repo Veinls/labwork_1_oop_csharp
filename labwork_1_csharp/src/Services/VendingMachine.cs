@@ -97,7 +97,7 @@ namespace labwork_1_csharp.Services
             
         }
 
-        public WorkMode? ParseCommand(string input)
+        public WorkMode? ParseCommand(string? input)
         {
             if (string.IsNullOrWhiteSpace(input))
                 return null;
